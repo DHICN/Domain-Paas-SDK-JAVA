@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.dhicn.domain.paas.sdk</groupId>
     <artifactId>dhicn-domain-paas-sdk</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>dhicn-domain-paas-sdk</name>
     <version>1.0.0</version>
     <url>https://github.com/DHICN/Domain-Paas-SDK-JAVA</url>
