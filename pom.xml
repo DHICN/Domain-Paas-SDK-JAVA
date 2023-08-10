@@ -110,6 +110,7 @@
         </plugins>
     </build>
 
+
    <profiles>
         <!-- Deployment profile (required so these plugins are only used when deploying) -->
          <!-- 下面这个标签里的不能改 -->
