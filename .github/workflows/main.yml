@@ -24,8 +24,10 @@ jobs:
         with:
             java-version: 11
 
-      - name: Publish to Maven Central Repo
+      - name: print secret
+        run: echo ${{ secrets.GPG_SECRET }}
 
+      - name: Publish to Maven Central Repo
         uses: samuelmeuli/action-maven-publish@v1
         with:
           gpg_private_key: ${{ secrets.GPG_SECRET }}
