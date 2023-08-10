@@ -29,6 +29,6 @@ jobs:
 
       - name: Publish to Maven Central Repo
         run: mvn -B deploy -Dgpg.skip
-        with:
+        env:
           MAVEN_USERNAME: ${{ secrets.OSSRH_USER }}
           MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
