@@ -22,7 +22,10 @@ jobs:
       - name: Setup JAVA
         uses: actions/setup-java@v1
         with:
-            java-version: 11
+            java-version: 11         
+            server-username: ${{ secrets.OSSRH_USER }}
+            server-password: ${{ secrets.OSSRH_PASSWORD }}
+            gpg-passphrase:  ${{ secrets.GPG_PASSWORD }}
 
       - name: Publish to Maven Central Repo
         uses: samuelmeuli/action-maven-publish@v1
