@@ -223,6 +223,7 @@
             <name>Nexus Snapshot Repository</name>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
