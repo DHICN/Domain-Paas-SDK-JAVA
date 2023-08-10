@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
             java-version: 11
-            server-id: ossrh         
+            server-id: sonatype-nexus-staging         
             server-username: ${{ secrets.OSSRH_USER }}
             server-password: ${{ secrets.OSSRH_PASSWORD }}
             gpg-passphrase:  ${{ secrets.GPG_PASSWORD }}
