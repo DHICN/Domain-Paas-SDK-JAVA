@@ -20,7 +20,7 @@ jobs:
             pwd
             ls -lh
       - name: Setup JAVA
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v1
         with:
             java-version: 1.8
             server-id: sonatype-nexus-staging
