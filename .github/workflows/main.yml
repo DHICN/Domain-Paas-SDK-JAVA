@@ -26,6 +26,7 @@ jobs:
             server-id: sonatype-nexus-staging
             server-username: ${{ secrets.OSSRH_USER }}
             server-password: ${{ secrets.OSSRH_PASSWORD }}
+            gpg-passphrase:  ${{ secrets.GPG_PASSWORD }}
 
       - name: Publish to Maven Central Repo
         uses: samuelmeuli/action-maven-publish@v1
